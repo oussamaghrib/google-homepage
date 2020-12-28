@@ -1,0 +1,233 @@
+body {
+    height: 100%;
+    
+}
+nav {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 50px 50px 50px 50px;
+    grid-template-areas: ". gmail images menu profile";
+}
+a {
+    color: rgba(0,0,0,0.87);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+#gmail {
+    grid-area: gmail;
+}
+#images {
+    grid-area: images;
+}
+#menu {
+    grid-area: menu;
+}
+#profile {
+    grid-area: profile;
+}
+#profile img {
+    border-radius:50%;
+    height: 32px;
+    width: 32px;
+}
+main {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 0.6fr 1.4fr 0.6fr;
+    grid-template-rows: 0.6fr 1fr;
+    grid-template-areas: ". logo ."
+                         ". search .";
+
+}
+#logo {
+    grid-area: logo;
+    width: 270px;
+    place-self: end center;
+}
+#search {
+    grid-area: search;
+    border-color: white;
+    place-self: start center;  
+    width: 100%;  
+}
+.lookup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    border-style: solid;
+    height: 46px;
+    width: 91%;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px
+}
+.lookup input {
+    border: none;
+    flex-grow:2
+}
+.lookup input:focus {
+    outline: none;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    padding:5px
+}
+#google-search {
+    background-color: #ced1d3de;
+    width: ;
+    margin: 5px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+#lucky-search {
+    background-color: #ced1d3de;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+footer {
+    background-color: #f2f2f2;
+}
+.links {
+    display: flex;
+    justify-content: space-around;
+    
+}
+#How-Search-works {
+    flex-grow: 2;
+}
+#Advertising {
+    padding: 0 5px;
+}
+#Business {
+    padding: 0 5px;
+}
+#About {
+    padding: 0 5px;
+}
+#Privacy {
+    padding: 0 5px;
+}
+#Terms {
+    padding: 0 5px;
+}
+#Setting {
+    padding: 0 5px;
+}
+
+
+
+
+/*icons */
+.gg-search {
+    box-sizing: border-box;
+    position: relative;
+    display: inline;
+    transform: scale(var(--ggs,1));
+    width: 16px;
+    height: 16px;
+    border: 2px solid;
+    border-radius: 100%;
+    margin-left: 4px;
+    margin-right: 5px;
+    color: #9aa0a6;
+    margin-bottom: 5px;
+
+   }
+   
+   .gg-search::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 3px;
+    width: 2px;
+    height: 8px;
+    background: currentColor;
+    transform: rotate(-45deg);
+    top: 10px;
+    left: 12px
+   } 
+   .gg-mic {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 16px;
+    height: 12px;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+    border: 2px solid;
+    border-top: 0;
+    margin-top: 3px;
+    margin-right: 6px;
+    color: #f4b400
+
+   }
+   
+   .gg-mic::after,
+   .gg-mic::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    color: #4285f4;
+
+   }
+   
+   .gg-mic::after {
+    border: 2px solid;
+    width: 8px;
+    height: 18px;
+    left: 2px;
+    top: -10px;
+    border-radius: 4px;
+    color: #34a853;
+   }
+   
+   .gg-mic::before {
+    width: 10px;
+    height: 4px;
+    top: 12px;
+    left: 1px;
+    border-right: 4px solid transparent;
+    box-shadow:
+    0 2px 0,
+    inset -2px 0 0
+   } 
+   .gg-menu-grid-o {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 16px;
+    height: 16px;
+   }
+   
+   .gg-menu-grid-o::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: currentColor;
+    box-shadow:
+    0 6px 0,
+    6px 6px 0,
+    12px 6px 0,
+    6px 12px 0,
+    12px 12px 0,
+    6px 0 0,
+    12px 0 0,
+    0 12px 0
+    ;
+    border-radius: 22px;
+   } 
